@@ -1,9 +1,9 @@
 const MenuSection = ({ children, text }) => {
   //logic here
   return (
-    <section>
-      <h3>{text}</h3>
-      {children}
+    <section className='section-menu'>
+      <h3 className='text-section'>{text}</h3>
+      <div className='card-album'>{children}</div>
     </section>
   );
 };

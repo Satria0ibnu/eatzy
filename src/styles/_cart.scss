@@ -1,0 +1,11 @@
+@use "_color.scss";
+.list-album {
+  background-color: greenyellow;
+}
+
+.list-total {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
