@@ -1,0 +1,107 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+:where(html, body, p, h1, h2, h3, h4, h5, h6, figure, ol, ul) {
+  margin: 0;
+}
+
+/* Root defaults */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue",
+    Arial, "Noto Sans";
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Media and replaced elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms inherit fonts and colors */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Buttons */
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Anchors*/
+a {
+  color: inherit;
+  text-decoration: inherit;
+  text-decoration-skip-ink: auto;
+}
+
+/* Lists */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Headings left unstyled to follow your scale */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Focus outline for keyboard users */
+:focus {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+/* Predictable borders */
+:where(*, *::before, *::after) {
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}

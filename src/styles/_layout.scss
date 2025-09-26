@@ -1,0 +1,45 @@
+$header-height: 80px;
+$max-height-container: calc(90vh - #{$header-height});
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto; // allow page to scroll
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #307dca;
+  padding: 20px 32px;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  box-sizing: border-box;
+  gap: 32px;
+}
+
+.menu-container,
+.cart-container {
+  padding: 16px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: $max-height-container;
+}
+
+.menu-container {
+  flex: 7;
+  background-color: #f5f5f5;
+}
+
+.cart-container {
+  flex: 3;
+  background-color: #f5f5f5;
+}
